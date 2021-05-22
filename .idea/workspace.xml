@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58902428-f61c-4150-a5be-1f07df2e9d45" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rAsY3XSjySsxCxFsZ9kp4WuBng" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gestor/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ez2Save\gestor" />
+      <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58902428-f61c-4150-a5be-1f07df2e9d45" name="Default Changelist" comment="" />
+      <created>1618430272628</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618430272628</updated>
+      <workItem from="1618430273764" duration="7639000" />
+      <workItem from="1618758613764" duration="9471000" />
+      <workItem from="1618852596355" duration="5185000" />
+      <workItem from="1618996181808" duration="4645000" />
+      <workItem from="1619107604422" duration="4029000" />
+      <workItem from="1619197287508" duration="3483000" />
+      <workItem from="1619255974669" duration="3678000" />
+      <workItem from="1619272753219" duration="3577000" />
+      <workItem from="1619427823727" duration="6834000" />
+      <workItem from="1620381602162" duration="1525000" />
+      <workItem from="1620396783007" duration="2113000" />
+      <workItem from="1620467147331" duration="4377000" />
+      <workItem from="1620509565821" duration="1034000" />
+      <workItem from="1620996055603" duration="19248000" />
+      <workItem from="1621070765628" duration="22532000" />
+      <workItem from="1621156358839" duration="25146000" />
+      <workItem from="1621237123833" duration="23571000" />
+      <workItem from="1621323405617" duration="12716000" />
+      <workItem from="1621673036148" duration="1312000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

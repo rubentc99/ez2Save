@@ -1,0 +1,501 @@
+*{
+    font-family: "Calibri";
+    margin: 0;
+    padding: 0;
+}
+
+/*///////////////////// INDEX ///////////////////////////*/
+.dark_header_index{ /*header azul oscuro parte superior*/
+    height: 80px;
+    width: 100%;
+    background-color: #03045E;
+}
+.img_box_login img{ /*imagen del logo*/
+    width: 100%;
+}
+.img_box_login{ /*caja donde está metido el logo*/
+    height: 60px;
+    width: 160px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+body{ /*color de fondo*/
+    background-color: #DBF5FA;
+}
+.login_box{ /*caja grande del login donde se encuentran todos los elementos*/
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    margin: 60px auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bottom_box_border{
+    height: 60px;
+    width: 600px;
+    border-bottom: 2px solid #CACACA;
+}
+.txt_top{ /*Caja donde se encuentra el texto "Iniciar sesion"*/
+    height: 40px;
+    margin: 10px 0 0 30px;
+    position: fixed;
+}
+.txt_top p{ /*Texto "Iniciar sesión"*/
+    color: #CACACA;
+    /*color: #00B4D8;*/
+    font-size: 32px;
+    font-weight: bold;
+}
+.login_form_box_1{ /*caja azul del email*/
+    height: 90px;
+    width: 500px;
+    margin: 50px 0 0 50px;
+    background-color: #DBF5FA;
+}
+#login_email_label, #login_pass_label{ /*texto "Email:"*/
+    margin: 32.5px 0 0 20px;
+    font-size: 22px;
+    position: fixed;
+    color: #000000;
+}
+#login_email_input{ /*caja donde se introduce el email*/
+    margin: 32.5px 0 0 100px;
+    border: none;
+    height: 25px;
+    width: 380px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+.login_form_box_2{ /*caja azul de la contraseña*/
+    height: 90px;
+    width: 500px;
+    margin: 30px 0 0 50px;
+    background-color: #DBF5FA;
+}
+#login_pass_input{ /*input del login, donde se escribe*/
+    margin: 32.5px 0 0 145px;
+    border: none;
+    height: 25px;
+    width: 335px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+.btn_login_box{ /*caja en la que está metido el botón de login*/
+    height: 40px;
+    width: 140px;
+    margin: 30px auto 0 auto;
+    background-color: #DBF5FA;
+}
+#btn_login{ /*propio botón del login*/
+    height: 100%;
+    width: 100%;
+    background-color: #DBF5FA;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+.register_text{ /*caja del texto para registrarse*/
+    height: 20px;
+    width: 300px;
+    margin: 30px 0 0 50px;
+}
+.register_text a, .forget_text a{ /*texto de registrarse y recuperar contraseña*/
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+.register_text a:hover, .forget_text a:hover{ /*hover del texto*/
+    text-decoration: underline;
+    cursor: pointer;
+}
+.forget_text{
+    height: 20px;
+    width: 300px;
+    margin: 10px 0 0 50px;
+}
+/*///////////////////// REGISTRO ///////////////////////////*/
+.register_box{ /*caja grande del registro donde se encuentran todos los elementos*/
+    height: 580px;
+    width: 600px;
+    background-color: white;
+    margin: 30px auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.register_form_box_1, .register_form_box_2, .register_form_box_3, .register_form_box_4, .register_form_box_5{ /*caja azul del email*/
+    height: 50px;
+    width: 500px;
+    margin: 25px 0 0 50px;
+    background-color: #DBF5FA;
+}
+.register_name_box, .register_surname_box, .register_email_box, .register_password_box, .register_password2_box{ /*caja donde se encuentran el label y el input de "Nombre", "Apellidos", "Email", "Contraseña" y "Repetir contraseña"*/
+    padding-top: 13px;
+    margin-left: 20px;
+    height: 20px;
+    width: 175px;
+}
+#register_name_label, #register_surname_label, #register_email_label, #register_password_label, #register_password2_label{ /*label/texto de "Nombre", "Apellidos", "Email", "Contraseña" y "Repetir contraseña"*/
+    font-size: 22px;
+    color: #000000;
+    float: left;
+}
+#register_name_input{ /*input de "Nombre:"*/
+    margin: -25px 0 0 100px;
+    float: left;
+    border: none;
+    height: 25px;
+    width: 355px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+#register_surname_input{ /*input de "Apellidos:"*/
+    margin: -25px 0 0 110px;
+    float: left;
+    border: none;
+    height: 25px;
+    width: 345px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+#register_email_input{ /*input de "Email:"*/
+    margin: -25px 0 0 80px;
+    float: left;
+    border: none;
+    height: 25px;
+    width: 375px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+#register_password_input{ /*input de "Contraseña:"*/
+    margin: -25px 0 0 125px;
+    float: left;
+    border: none;
+    height: 25px;
+    width: 330px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+#register_password2_input{ /*input de "Repetir contraseña:"*/
+    margin: -25px 0 0 190px;
+    float: left;
+    border: none;
+    height: 25px;
+    width: 265px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+.btn_login_box{ /*caja en la que está metido el botón de login*/
+    height: 40px;
+    width: 140px;
+    margin: 30px auto 0 auto;
+    background-color: #DBF5FA;
+}
+#btn_login{ /*propio botón del login*/
+    height: 100%;
+    width: 100%;
+    background-color: #DBF5FA;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+.btn_register_box{ /*caja en la que está metido el botón de login*/
+    height: 40px;
+    width: 140px;
+    margin: 25px auto 0 auto;
+    background-color: #DBF5FA;
+}
+#btn_register{ /*propio botón del login*/
+    height: 100%;
+    width: 100%;
+    background-color: #DBF5FA;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+.register_text{ /*caja del texto para registrarse*/
+    height: 20px;
+    width: 300px;
+    margin: 30px 0 0 50px;
+}
+.register_text p{ /*texto de registrarse y recuperar contraseña*/
+    font-size: 18px;
+}
+.register_text p:hover{ /*hover del texto*/
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*///////////////////// HOME ///////////////////////////*/
+.dark_header{ /*header azul oscuro parte superior*/
+    height: 80px;
+    width: 100%;
+    background-color: #03045E;
+}
+.img_box_home img{ /*imagen del logo*/
+    width: 100%;
+}
+.img_box_home{ /*caja donde está metido el logo*/
+    height: 60px;
+    width: 160px;
+    margin-left: 260px;
+    padding-top: 20px;
+}
+/*/// ASIDE ///*/
+.lat_menu{ /*menú lateral color azul*/
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 240px;
+    background-color: #00B4D8;
+}
+.name_box{ /*caja donde se situa el texto "Gastos de " + el nombre del usuario */
+    width: 240px;
+}
+.name_box_text{ /*texto situado en la caja "name_box"*/
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+.lat_box{ /*cajas situadas en el menú de la izquierda que hacen referencia a "Mi prespuesto", "Gráficos" y "Mis cuentas"*/
+    width: 240px;
+    background-color: #0077B6;
+    height: 50px;
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lat_box img{ /*imagen situada al lado del texto*/
+    margin-left: 20px;
+    width: 15%;
+}
+.lat_box p{ /*texto de las cajas laterales*/
+    font-size: 20px;
+    margin-left: 10px;
+    color: #FFFFFF
+}
+/*///// SECTION //////*/
+.new_category_button_div{
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #CACACA;
+}
+#add_category_button{
+    width: 220px;
+    height: 100%;
+    margin-left: 240px;
+    background-color: #DBF5FA;
+    text-decoration: none;
+    color: #000000;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.plus_img_div{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#plus{
+    width: 50%;
+}
+.new_category_button_div p, .view_edit_delete_category p{
+    font-size: 24px;
+}
+.categories_container{
+    width: auto;
+    height: 100%;
+    margin-left: 240px;
+}
+.tittles{ /*div de los títulos (nombre y dinero asignado)*/
+    height: 40px;
+    width: 100%;
+    border-bottom: 2px solid #CACACA;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto; /* con esto limpio el float:left */
+}
+.tittles p{ /*texto de los titulos*/
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    color: #CACACA;
+}
+.category_name_div{ /* div de la palabra "Nombre" */
+    margin-left: 60px;
+}
+.category_money_div{ /* div de la palabra "Dinero asignado" */
+    /*necesito hacer lo de la posición abosoluta para que los precios
+    no dependan del nombre de la categoría y estén todos al mismo nivel*/
+    position: absolute;
+    left: 54%;
+}
+.category_content{ /* div de la categoria y div de la subcategoria */
+    height: 40px;
+    width: 100%;
+    border-bottom: 2px solid #CACACA;
+    display: grid;
+    grid-template-columns: 30px 110px 1050px 10px 70px 10px; /*con esto hago que la distancia entre div sea igual excepto con los iconos*/
+    justify-items: center; /*los alineo al centro*/
+    align-items: center;
+}
+.subcategory_content{ /* div de la categoria y div de la subcategoria */
+    height: 40px;
+    width: 100%;
+    border-bottom: 2px solid #CACACA;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.category_content a:hover{
+    background-color: #0077B6;
+}
+.category_content p, .subcategory_content{ /* texto del div de la categoria */
+    font-size: 22px;
+}
+.category_name{
+    margin-left: 10px;
+}
+.category_price{ /*div donde se muestran los precios asignados*/
+    left: 60%;
+}
+.img_checkbox_div{ /*div donde se mete la imagen del checkbox*/
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+}
+.img_checkbox_div img{ /*imagen del checkbox*/
+    width: 100%;
+}
+.list_category_edit_icon, .list_category_delete_icon, .add_subcategory_icon{
+    width: 25px;
+}
+.list_category_edit_icon img, .list_category_delete_icon img, .add_subcategory_icon img{
+    width: 100%;
+}
+.subcategory_name a{ /*para clickar en la subcategoría y ver la información*/
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+/*//// CREATE_CATEGORY ////*/
+.category_creation_div{
+    width: 600px;
+    height: 370px;
+    background-color: #FFFFFF;
+    margin: 5% 0 0 40%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: auto; /*soluciona el problema del margin-top que no funcionaba*/
+}
+.form_category_name{
+    width: 520px;
+    height: 60px;
+    background-color: #DBF5FA;
+    margin-top: 60px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form_category_name label, .form_category_money label{
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 22px;
+    color: #000000;
+}
+.form_category_name input{
+    border: none;
+    height: 25px;
+    width: 205px; /*poniendo 205 de ancho, dejo 40px de margen a la derecha que es igual al margen izquierdo*/
+    font-size: 18px;
+    padding-left: 5px; /*para que haya un mini espacio desde el comienzo del cuadro al texto que se escriba*/
+}
+.form_category_money{
+    width: 520px;
+    height: 60px;
+    background-color: #DBF5FA;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form_category_money input{
+    border: none;
+    height: 25px;
+    width: 278px; /*poniendo 205 de ancho, dejo 40px de margen a la derecha que es igual al margen izquierdo*/
+    font-size: 18px;
+    padding-left: 5px; /*para que haya un mini espacio desde el comienzo del cuadro al texto que se escriba*/
+}
+.btn_insert_category{ /*caja en la que está metido el botón de login*/
+    height: 40px;
+    width: 120px;
+    margin: 50px auto 0 auto; /*80 por abajo*/
+    background-color: #DBF5FA;
+}
+#insert_category_button{ /*propio botón del login*/
+    height: 100%;
+    width: 100%;
+    background-color: #DBF5FA;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+/*///////// view_category /////////*/
+.verCategoria{ /*div general del ver categoria*/
+    height: 100%;
+    width: 800px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.view_edit_delete_category{
+    height: 40px;
+    margin-left: 240px;
+}
+#add_subcategory_button{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+.view_category_titles_container{ /*div general en el que se encuentran todos los titulos (Referencia, Nombre, Dinero asignado)*/
+    height: 60px;
+    border-bottom: 2px solid #CACACA;
+    display: grid;
+    grid-template-columns: 210px 270px 260px; /*con esto hago que la distancia entre div sea igual*/
+    justify-items: center; /*los alineo al centro*/
+    align-content: center;
+}
+.view_category_titles_names p{ /*texto de los titulos de las categorías*/
+    font-size: 22px;
+    font-weight: bold;
+    color: #CACACA;
+}
+.view_category_info_container{
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto 20px 60px; /*con esto hago que la distancia entre div sea igual excepto con los iconos*/
+    justify-items: center; /*los alineo al centro*/
+    align-content: center;
+}
+.view_category_info_container p{
+    font-size: 22px;
+    color: #00B4D8;
+    text-align: center;
+}
+.view_category_edit_icon, .view_category_delete_icon{
+    width: 25px;
+}
+.view_category_edit_icon img, .view_category_delete_icon img{
+    width: 100%;
+}
