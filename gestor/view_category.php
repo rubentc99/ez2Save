@@ -26,7 +26,7 @@
     ?>
     <section>
         <div class="view_edit_delete_category">
-            <a id="add_subcategory_button" href='./create_subcategory.php?id=<?php echo $categoria->getId()?>'>
+            <a id="add_subcategory_button" href='./create_subcategory.php?idCategoria=<?php echo $categoria->getId()?>'>
                 <div class="plus_img_div">
                     <img id="plus" src="img/plus_azul.png">
                 </div>

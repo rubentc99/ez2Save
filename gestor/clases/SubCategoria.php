@@ -3,21 +3,21 @@
 
 class SubCategoria
 {
-    private $idSubcategoria;
+    private $id;
     private $idCategoria;
     private $nombre;
     private $precio;
 
     /**
      * SubCategoria constructor.
-     * @param $idSubcategoria
+     * @param $id
      * @param $idCategoria
      * @param $nombre
      * @param $precio
      */
-    public function __construct($idSubcategoria="", $idCategoria="", $nombre="", $precio="")
+    public function __construct($id="", $idCategoria="", $nombre="", $precio="")
     {
-        $this->idSubcategoria = $idSubcategoria;
+        $this->id = $id;
         $this->idCategoria = $idCategoria;
         $this->nombre = $nombre;
         $this->precio = $precio;
@@ -29,15 +29,15 @@ class SubCategoria
      */
     public function getId()
     {
-        return $this->idSubcategoria;
+        return $this->id;
     }
 
     /**
      * @param mixed $id
      */
-    public function setId($idSubcategoria)
+    public function setId($id)
     {
-        $this->id = $idSubcategoria;
+        $this->id = $id;
     }
 
     /**
@@ -117,7 +117,7 @@ class SubCategoria
 
     public function imprimirContenido(){
         $html = "<div class='subcategory_content'>
-            <a href='./view_subcategory.php?id=".$this->idSubcategoria."'><div class='subcategory_name' style='width: 150px; margin-left: 55px'><p>$this->nombre</p></a></div>
+            <a href='./view_subcategory.php?id=".$this->id."'><div class='subcategory_name' style='width: 150px; margin-left: 55px'><p>$this->nombre</p></a></div>
             <div class='precios' style='margin-left: 436px'><p>$this->precio €</p></div>
         </div>";
         return $html;
@@ -131,12 +131,16 @@ class SubCategoria
             <div class='view_subcategory_titles_names'><p>Dinero asignado</p></div>
             </div>";
         $html.= "<div class='view_subcategory_info_container'>
-            <div><p>$this->idSubcategoria</p></div>
+            <div><p>$this->id</p></div>
             <div><p>$this->idCategoria</p></div>
             <div><p>$this->nombre</p></div>
             <div><p>$this->precio €</p></div>
-            <div class='view_subcategory_edit_icon'><a href='./create_subcategory.php?id=".$this->idSubcategoria."'><img src='./img/editar.png'></a></div>
-            <div class='view_subcategory_delete_icon'><a href='javascript:borrarCategoria(".$this->idSubcategoria.")'><img src='./img/delete.png'></a></div>";
+            <!--en el botón de editar categoría, envío por get ambos id's, ya lo que los necesitaré para:
+            1. Recoger los datos del objeto subcategoria ya creado y mostrarlos en los inputs 
+            2. Necesito el id de la categoría a la que pertence para realizar el update (aunque al recoger los datos del objeto también recojo el idCategoria,
+            para otros casos como la creación de categoría necesito una variable que sirva para cualquier situación, y esa variable es idGET)-->
+            <div class='view_subcategory_edit_icon'><a href='./create_subcategory.php?idSubcategoria=".$this->id."&idCategoria=".$this->idCategoria."'><img src='./img/editar.png'></a></div>
+            <div class='view_subcategory_delete_icon'><a href='javascript:borrarCategoria(".$this->id.")'><img src='./img/delete.png'></a></div>";
         return $html;
     }
 }

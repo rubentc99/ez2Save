@@ -2,18 +2,18 @@
 
 class Categoria
 {
-    private $id;
+    private $idCategoria;
     private $nombre;
     private $precio;
 
     /**
      * Categoria constructor.
-     * @param $id
+     * @param $idCategoria
      * @param $nombre
      * @param $precio
      */
-    public function __construct($id="", $nombre="", $precio=""){
-        $this->id = $id;
+    public function __construct($idCategoria="", $nombre="", $precio=""){
+        $this->idCategoria = $idCategoria;
         $this->nombre = $nombre;
         $this->precio = $precio;
     }
@@ -24,15 +24,15 @@ class Categoria
      */
     public function getId()
     {
-        return $this->id;
+        return $this->idCategoria;
     }
 
     /**
-     * @param mixed $id
+     * @param mixed $idCategoria
      */
-    public function setId($id)
+    public function setId($idCategoria)
     {
-        $this->id = $id;
+        $this->idCategoria = $idCategoria;
     }
 
     /**
@@ -73,38 +73,38 @@ class Categoria
         $conexion->insertarElementos($tabla, $datos);
     }
 
-    public function actualizar($id, $datos){
+    public function actualizar($idCategoria, $datos){
         $conexion = new Bd();
-        $conexion->uppdateBD($id, "categorias", $datos);
+        $conexion->uppdateBD($idCategoria, "categorias", $datos);
     }
 
-    public function borrar($id){
+    public function borrar($idCategoria){
         $conexion = new Bd();
-        $sql = "DELETE FROM categorias WHERE id =".$id;
+        $sql = "DELETE FROM categorias WHERE id =".$idCategoria;
         //echo $sql;
         $conexion->consulta($sql);
     }
 
-    public function obtenerPorId($id){
-        $sql = "SELECT id, nombre, precio FROM categorias WHERE id=".$id;
+    public function obtenerPorId($idCategoria){
+        $sql = "SELECT id, nombre, precio FROM categorias WHERE id=".$idCategoria;
         $conexion = new Bd();
         $res = $conexion->consulta($sql);
         //uso list en vez de while porque me va a devolver una sola fila
-        list($id, $nombre, $precio) = mysqli_fetch_array($res);
-        $this->__construct($id, $nombre, $precio);
+        list($idCategoria, $nombre, $precio) = mysqli_fetch_array($res);
+        $this->__construct($idCategoria, $nombre, $precio);
     }
 
     public function imprimirContenido(){
         //$html = "<div class='content'>$this->id $this->nombre $this->precio</div>";
         $html = "<div class='category_content' style='background-color: #90E0EF'>
             <!---->
-            <div class='img_checkbox_div'><a href='./view_category.php?id=".$this->id."'><img src='./img/checkbox_gris.png'></a></div>
+            <div class='img_checkbox_div'><a href='./view_category.php?id=".$this->idCategoria."'><img src='./img/checkbox_gris.png'></a></div>
             <div class='category_name'><p>$this->nombre</p></div>
             <div class='category_price'><p>$this->precio €</p></div>
             <!--en el botón de añadir subcategoría, ncesito mandar el id de la categoría para asociarlo al objeto subcategoria-->
-            <div class='add_subcategory_icon'><a href='./create_subcategory.php?idCategoria=".$this->id."'><img src='./img/plus_black.png'></a></div>
-            <div class='list_category_edit_icon'><a href='./create_category.php?id=".$this->id."'><img src='./img/editar.png'></a></div>
-            <div class='list_category_delete_icon'><a href='javascript:borrarCategoria(".$this->id.")'><img src='./img/delete.png'></a></div>
+            <div class='add_subcategory_icon'><a href='./create_subcategory.php?idCategoria=".$this->idCategoria."'><img src='./img/plus_black.png'></a></div>
+            <div class='list_category_edit_icon'><a href='./create_category.php?id=".$this->idCategoria."'><img src='./img/editar.png'></a></div>
+            <div class='list_category_delete_icon'><a href='javascript:borrarCategoria(".$this->idCategoria.")'><img src='./img/delete.png'></a></div>
         </div>";
         return $html;
     }
@@ -116,11 +116,11 @@ class Categoria
             <div class='view_category_titles_names'><p>Dinero asignado</p></div>
             </div>";
         $html.= "<div class='view_category_info_container'>
-            <div><p>$this->id</p></div>
+            <div><p>$this->idCategoria</p></div>
             <div><p>$this->nombre</p></div>
             <div><p>$this->precio €</p></div>
-            <div class='view_category_edit_icon'><a href='./create_category.php?id=".$this->id."'><img src='./img/editar.png'></a></div>
-            <div class='view_category_delete_icon'><a href='javascript:borrarCategoria(".$this->id.")'><img src='./img/delete.png'></a></div>";
+            <div class='view_category_edit_icon'><a href='./create_category.php?id=".$this->idCategoria."'><img src='./img/editar.png'></a></div>
+            <div class='view_category_delete_icon'><a href='javascript:borrarCategoria(".$this->idCategoria.")'><img src='./img/delete.png'></a></div>";
         return $html;
     }
 }
