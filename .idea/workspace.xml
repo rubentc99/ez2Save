@@ -30,11 +30,11 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\ez2Save\gestor" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ez2Save\gestor" />
       <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
     </key>
   </component>
@@ -79,6 +79,7 @@
       <workItem from="1621237123833" duration="23571000" />
       <workItem from="1621323405617" duration="12716000" />
       <workItem from="1621673036148" duration="1312000" />
+      <workItem from="1621764286312" duration="10996000" />
     </task>
     <servers />
   </component>

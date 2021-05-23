@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script src="./js/script.js"></script>
+    <link rel="icon" href="./img/logo.png">
     <title>ez2Save</title>
 </head>
 

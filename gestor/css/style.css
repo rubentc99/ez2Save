@@ -352,9 +352,6 @@ body{ /*color de fondo*/
     justify-content: flex-start;
     align-items: center;
 }
-.category_content a:hover{
-    background-color: #0077B6;
-}
 .category_content p, .subcategory_content{ /* texto del div de la categoria */
     font-size: 22px;
 }
@@ -369,6 +366,7 @@ body{ /*color de fondo*/
     height: 25px;
     margin-left: 30px;
 }
+
 .img_checkbox_div img{ /*imagen del checkbox*/
     width: 100%;
 }
@@ -447,10 +445,10 @@ body{ /*color de fondo*/
     border: none;
 }
 /*///////// view_category /////////*/
-.verCategoria{ /*div general del ver categoria*/
+.view_category{ /*div general del ver categoria*/
     height: 100%;
     width: 800px;
-    margin: 40px auto;
+    margin: 40px 30%;
     background-color: #FFFFFF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -472,7 +470,7 @@ body{ /*color de fondo*/
     height: 60px;
     border-bottom: 2px solid #CACACA;
     display: grid;
-    grid-template-columns: 210px 270px 260px; /*con esto hago que la distancia entre div sea igual*/
+    grid-template-columns: 210px 260px 260px; /*con esto hago que la distancia entre div sea igual*/
     justify-items: center; /*los alineo al centro*/
     align-content: center;
 }
@@ -497,5 +495,45 @@ body{ /*color de fondo*/
     width: 25px;
 }
 .view_category_edit_icon img, .view_category_delete_icon img{
+    width: 100%;
+}
+/*///////// VIEW_SUBCATEGORY /////////////*/
+.view_subcategory{ /*div general del ver categoria*/
+    height: 100%;
+    width: 1150px;
+    margin: 40px 21%;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.view_subcategory_titles_container{ /*div general en el que se encuentran todos los titulos (Referencia, Nombre, Dinero asignado)*/
+    height: 60px;
+    border-bottom: 2px solid #CACACA;
+    display: grid;
+    grid-template-columns: 210px 260px 260px 300px; /*con esto hago que la distancia entre div sea igual*/
+    justify-items: center; /*los alineo al centro*/
+    align-content: center;
+}
+
+.view_subcategory_titles_names p{ /*texto de los titulos de las categorías*/
+    font-size: 22px;
+    font-weight: bold;
+    color: #CACACA;
+}
+.view_subcategory_info_container{
+    height: 50px;
+    display: grid;
+    grid-template-columns: 210px 260px 240px 380px 0 75px; /*con esto hago que la distancia entre div sea igual excepto con los iconos*/
+    justify-items: center; /*los alineo al centro*/
+    align-content: center;
+}
+.view_subcategory_info_container p{
+    font-size: 22px;
+    color: #00B4D8;
+    text-align: center;
+}
+.view_subcategory_edit_icon, .view_subcategory_delete_icon{
+    width: 25px;
+}
+.view_subcategory_edit_icon img, .view_subcategory_delete_icon img{
     width: 100%;
 }

@@ -29,7 +29,7 @@ class Bd
         }
         $sql = "INSERT INTO ".$tabla." (".implode(',',$claves).") VALUES (".implode(',',$valores).")";
         //implode -> array [a],[b],[c],[d] -> implode("-", array) -> string -> a-b-c-d
-        echo $sql; //me ayuda a localizar errores en la inserión
+        //echo $sql; //me ayuda a localizar errores en la inserión
         $this->resultado = $this->conexion->query($sql);
         $res = $this->resultado;
         return $res;

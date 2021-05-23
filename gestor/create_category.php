@@ -7,15 +7,15 @@
 
     //este codigo se utiliza en el caso de estemos entrando a este formulario, por el botón de editar
     //en tal caso, vemos si viene un id por get, y en tal caso rellenamos el formulario con los datos para que se puedan modificar
-    if(isset($_GET['idCategoria']) && !empty($_GET['idCategoria'])){ //si hay algo instaciado en el post llamado id, y si no está vacío
+    if(isset($_GET['id']) && !empty($_GET['id'])){ //si hay algo instaciado en el post llamado id, y si no está vacío
         $id = intval($_GET['id']); //capturo el id del objeto //el intval es para seguridad
         $categoria->obtenerPorId($id);
     }
 
     if(isset($_POST) && !empty($_POST)){
-        if(!empty($_POST['idCategoria'])){ //si viene un idCatoria por post, es porque hemos clickado en editar y queremos hacer una actualizacion
+        if(!empty($_POST['id'])){ //si viene un idCategoria por post, es porque hemos clickado en editar y queremos hacer una actualizacion
             //actualizo
-            $id = intval($_POST['idCategoria']);
+            $id = intval($_POST['id']);
             $categoria->actualizar($id, $_POST);
         }
         $categoria->insertar($_POST, "categorias"); //inserto los datos del post
@@ -35,7 +35,7 @@
 <section>
     <div class="category_creation_div">
         <form id="form_category" name="category" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-            <input type="hidden" name="idCategoria" value="<?php echo $categoria->getId()?>">
+            <input type="hidden" name="id" value="<?php echo $categoria->getId()?>">
             <div class="form_category_name">
                 <label>Nombre de la categoría: </label><input type="text" name="nombre" value="<?php echo $categoria->getNombre()?>">
             </div>
