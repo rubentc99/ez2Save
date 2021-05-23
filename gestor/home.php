@@ -27,7 +27,7 @@
         <div class="new_category_button_div">
             <a id="add_category_button" href="create_category.php">
                 <div class="plus_img_div">
-                    <img id="plus" src="img/plus_azul.png">
+                    <img src="img/plus_azul.png">
                 </div>
                 <p>Crear categoría</p>
             </a>

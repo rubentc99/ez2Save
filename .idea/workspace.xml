@@ -23,21 +23,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1rAsY3XSjySsxCxFsZ9kp4WuBng" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CRUDrubentabaradam11" />
+    <property name="last_opened_file_path" value="D:/Programas/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\ez2Save\gestor" />
+      <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
     </key>
   </component>
@@ -83,7 +84,7 @@
       <workItem from="1621323405617" duration="12716000" />
       <workItem from="1621673036148" duration="1312000" />
       <workItem from="1621764286312" duration="10996000" />
-      <workItem from="1621782807768" duration="9225000" />
+      <workItem from="1621782807768" duration="15331000" />
     </task>
     <servers />
   </component>

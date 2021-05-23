@@ -42,11 +42,11 @@ function borrarSubcategoria(id) {
         myRand = parseInt(Math.random() * 999999999999999);
         modurl = myurl + '?rand=' + myRand + '&id=' + id;
         borrar.open("GET", modurl, true); //pasa a delete_category.php
-        borrar.onreadystatechange = borrarCategoriaResponse;
+        borrar.onreadystatechange = borrarSubcategoriaResponse;
         borrar.send(null);
     }
 }
-function borrarCategoriaResponse() {
+function borrarSubcategoriaResponse() {
     if (borrar.readyState == 4) {
         if(borrar.status == 200) {
             var listaCategorias = borrar.responseText;

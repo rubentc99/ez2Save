@@ -25,7 +25,7 @@
         include "includes/aside.php";
     ?>
     <section>
-        <div class="view_edit_delete_category">
+        <div class="add_subcategory">
             <a id="add_subcategory_button" href='./create_subcategory.php?idCategoria=<?php echo $categoria->getId()?>'>
                 <div class="plus_img_div">
                     <img id="plus" src="img/plus_azul.png">

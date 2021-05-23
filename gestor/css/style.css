@@ -274,13 +274,16 @@ body{ /*color de fondo*/
     margin-left: 10px;
     color: #FFFFFF
 }
-/*///// SECTION //////*/
-.new_category_button_div{
+/*///// SECTION HOME //////*/
+.new_category_button_div{ /*div del boton de nueva categoria*/
     width: 100%;
     height: 40px;
     border-bottom: 2px solid #CACACA;
 }
-#add_category_button{
+.new_category_button_div p{ /*texto del div del boton de nueva categoria*/
+    font-size: 24px;
+}
+#add_category_button{ /*a del boton de nueva categoria*/
     width: 220px;
     height: 100%;
     margin-left: 240px;
@@ -293,32 +296,25 @@ body{ /*color de fondo*/
     align-items: center;
     cursor: pointer;
 }
-.plus_img_div{
+.plus_img_div{ /*div del boton del logo de añadir*/
     width: 60px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#plus{
+.plus_img_div img{ /*imagen del logo de añadir*/
     width: 50%;
 }
-.new_category_button_div p, .view_edit_delete_category p{
-    font-size: 24px;
-}
-.categories_container{
+.categories_container{ /*main container de la informacion del home*/
     width: auto;
     height: 100%;
     margin-left: 240px;
 }
 .tittles{ /*div de los títulos (nombre y dinero asignado)*/
-    height: 40px;
-    width: 100%;
+    height: 35px;
+    width: auto;
     border-bottom: 2px solid #CACACA;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    overflow: auto; /* con esto limpio el float:left */
 }
 .tittles p{ /*texto de los titulos*/
     float: left;
@@ -327,24 +323,24 @@ body{ /*color de fondo*/
     color: #CACACA;
 }
 .category_name_div{ /* div de la palabra "Nombre" */
-    margin-left: 60px;
+    margin-top: 5px;
+    margin-left: 50px;
 }
 .category_money_div{ /* div de la palabra "Dinero asignado" */
-    /*necesito hacer lo de la posición abosoluta para que los precios
-    no dependan del nombre de la categoría y estén todos al mismo nivel*/
-    position: absolute;
-    left: 54%;
+    margin-top: 5px;
+    margin-left: 600px;
 }
 .category_content{ /* div de la categoria y div de la subcategoria */
-    height: 40px;
+    background-color: #90E0EF;
+    height: 50px;
     width: 100%;
     border-bottom: 2px solid #CACACA;
-    display: grid;
-    grid-template-columns: 30px 110px 1050px 10px 70px 10px; /*con esto hago que la distancia entre div sea igual excepto con los iconos*/
-    justify-items: center; /*los alineo al centro*/
-    align-items: center;
 }
-.subcategory_content{ /* div de la categoria y div de la subcategoria */
+.img_checkbox_div, .category_name, .category_price, .add_subcategory_icon, .list_category_edit_icon, .list_category_delete_icon{
+    margin-top: 10px;
+    float: left;
+}
+.subcategory_content{ /* div de la info categoria y de la subcategoria */
     height: 40px;
     width: 100%;
     border-bottom: 2px solid #CACACA;
@@ -382,7 +378,7 @@ body{ /*color de fondo*/
     color: #000000;
 }
 /*//// CREATE_CATEGORY ////*/
-.category_creation_div{
+.category_creation_div{ /*div general de crear categoria*/
     width: 600px;
     height: 370px;
     background-color: #FFFFFF;
@@ -390,7 +386,7 @@ body{ /*color de fondo*/
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     overflow: auto; /*soluciona el problema del margin-top que no funcionaba*/
 }
-.form_category_name{
+.form_category_name{ /*div del nombre de la categoria*/
     width: 520px;
     height: 60px;
     background-color: #DBF5FA;
@@ -400,20 +396,20 @@ body{ /*color de fondo*/
     justify-content: flex-start;
     align-items: center;
 }
-.form_category_name label, .form_category_money label{
+.form_category_name label, .form_category_money label{ /*label del nombre de la categoria y del precio*/
     padding-left: 40px;
     padding-right: 20px;
     font-size: 22px;
     color: #000000;
 }
-.form_category_name input{
+.form_category_name input{ /*input del nombre de la categoria*/
     border: none;
     height: 25px;
     width: 205px; /*poniendo 205 de ancho, dejo 40px de margen a la derecha que es igual al margen izquierdo*/
     font-size: 18px;
     padding-left: 5px; /*para que haya un mini espacio desde el comienzo del cuadro al texto que se escriba*/
 }
-.form_category_money{
+.form_category_money{ /*div del dinero de la categoria*/
     width: 520px;
     height: 60px;
     background-color: #DBF5FA;
@@ -423,7 +419,7 @@ body{ /*color de fondo*/
     justify-content: flex-start;
     align-items: center;
 }
-.form_category_money input{
+.form_category_money input{ /*input del dinero de la categoria*/
     border: none;
     height: 25px;
     width: 278px; /*poniendo 205 de ancho, dejo 40px de margen a la derecha que es igual al margen izquierdo*/
@@ -452,11 +448,14 @@ body{ /*color de fondo*/
     background-color: #FFFFFF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.view_edit_delete_category{
+.add_subcategory{ /*div de añadir subcategoria*/
     height: 40px;
     margin-left: 240px;
 }
-#add_subcategory_button{
+.add_subcategory p{ /*texto del div de añadir subcategoria*/
+    font-size: 24px;
+}
+#add_subcategory_button{ /*a del botón de añadir subcategoría*/
     height: 100%;
     width: 100%;
     display: flex;
@@ -479,61 +478,62 @@ body{ /*color de fondo*/
     font-weight: bold;
     color: #CACACA;
 }
-.view_category_info_container{
+.view_category_info_container{ /*container general donde se encuentra la información de la categoría*/
     height: 50px;
     display: grid;
     grid-template-columns: auto auto auto 20px 60px; /*con esto hago que la distancia entre div sea igual excepto con los iconos*/
     justify-items: center; /*los alineo al centro*/
     align-content: center;
 }
-.view_category_info_container p{
+.view_category_info_container p{ /*texto del container general donde se encuentra la información de la categoría*/
     font-size: 22px;
     color: #00B4D8;
     text-align: center;
 }
-.view_category_edit_icon, .view_category_delete_icon{
+.view_category_edit_icon, .view_category_delete_icon{ /*divs donde se encuentran los iconos de editar y borrar*/
     width: 25px;
 }
-.view_category_edit_icon img, .view_category_delete_icon img{
+.view_category_edit_icon img, .view_category_delete_icon img{ /*iconos de editar y borrar*/
     width: 100%;
 }
 /*///////// VIEW_SUBCATEGORY /////////////*/
 .view_subcategory{ /*div general del ver categoria*/
     height: 100%;
-    width: 1150px;
-    margin: 40px 21%;
+    width: 65%;
+    margin: 40px 25%;
     background-color: #FFFFFF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .view_subcategory_titles_container{ /*div general en el que se encuentran todos los titulos (Referencia, Nombre, Dinero asignado)*/
-    height: 60px;
+    height: 50px;
     border-bottom: 2px solid #CACACA;
-    display: grid;
-    grid-template-columns: 210px 260px 260px 300px; /*con esto hago que la distancia entre div sea igual*/
-    justify-items: center; /*los alineo al centro*/
-    align-content: center;
 }
-
+.view_subcategory_titles_names{ /*divs de los titulos "Referencia", "Referencia categoria", "Nombre" y "Dinero asignado"*/
+    margin-top: 10px;
+    float: left;
+}
 .view_subcategory_titles_names p{ /*texto de los titulos de las categorías*/
     font-size: 22px;
     font-weight: bold;
     color: #CACACA;
 }
-.view_subcategory_info_container{
+.view_subcategory_info_container{/*container general donde se muestran los datos de la subcategoría*/
     height: 50px;
-    display: grid;
-    grid-template-columns: 210px 260px 240px 380px 0 75px; /*con esto hago que la distancia entre div sea igual excepto con los iconos*/
-    justify-items: center; /*los alineo al centro*/
-    align-content: center;
 }
-.view_subcategory_info_container p{
+.view_subcategory_info{ /*divs de la información de la subcategoria*/
+    margin-top: 10px;
+    float: left;
+}
+.view_subcategory_info_container p{ /*texto de los divs de la información de la subcategoria*/
     font-size: 22px;
     color: #00B4D8;
     text-align: center;
 }
-.view_subcategory_edit_icon, .view_subcategory_delete_icon{
+.view_subcategory_edit_icon, .view_subcategory_delete_icon{ /*divs de los iconos de editar y borrar*/
     width: 25px;
+    margin-top: 10px;
+    float: left;
 }
-.view_subcategory_edit_icon img, .view_subcategory_delete_icon img{
+.view_subcategory_edit_icon img, .view_subcategory_delete_icon img{ /*imagenes de editar y de borrar*/
     width: 100%;
 }
