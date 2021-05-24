@@ -337,7 +337,6 @@ body{ /*color de fondo*/
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-
 }
 .plus_img_div{ /*div del boton del logo de añadir*/
     width: 60px;
@@ -579,4 +578,50 @@ body{ /*color de fondo*/
 }
 .view_subcategory_edit_icon img, .view_subcategory_delete_icon img{ /*imagenes de editar y de borrar*/
     width: 100%;
+}
+/*/////////// DINERO ////////////*/
+.create_money_div{ /*div general de crear categoria*/
+    width: 600px;
+    height: 250px;
+    background-color: #FFFFFF;
+    margin: 5% 0 0 40%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+}
+.form_category_money{ /*div del dinero de la categoria*/
+    width: 520px;
+    height: 60px;
+    background-color: #DBF5FA;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form_category_money label{ /*label del nombre de la categoria y del precio*/
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 22px;
+    color: #000000;
+}
+.form_category_money input{ /*input del dinero de la categoria*/
+    border: none;
+    height: 25px;
+    width: 264px; /*poniendo 205 de ancho, dejo 40px de margen a la derecha que es igual al margen izquierdo*/
+    font-size: 18px;
+    padding-left: 5px; /*para que haya un mini espacio desde el comienzo del cuadro al texto que se escriba*/
+}
+.btn_insert_category{ /*caja en la que está metido el botón de login*/
+    height: 40px;
+    width: 120px;
+    margin: 50px auto 0 auto; /*80 por abajo*/
+    background-color: #DBF5FA;
+}
+#insert_category_button{ /*propio botón del login*/
+    height: 100%;
+    width: 100%;
+    background-color: #DBF5FA;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
 }
