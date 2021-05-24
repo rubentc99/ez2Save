@@ -5,8 +5,8 @@
             <p class="name_box_text">Gastos de <?php if(isset($_SESSION['id'])) echo $_SESSION['nombre']?></p>
         </div>
         <div class="lat_box" style="border-top: 1px solid #0077B6">
-            <img src="img/save-money.png">
-            <p>Mi presupuesto</p>
+                <img src="img/save-money.png">
+                <a href="./home.php"><p>Mi presupuesto</p></a>
         </div>
         <div class="lat_box">
             <a href="./add_money.php"><p>Agregar dinero</p></a>

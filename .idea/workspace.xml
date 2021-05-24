@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58902428-f61c-4150-a5be-1f07df2e9d45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gestor/add_money.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestor/img/dialogo_largo_azul_relleno.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestor/clases/Dinero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Ruben_Tabara_Cenador.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Ruben_Tabara_Cenador.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestor/add_money.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/add_money.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestor/clases/ListaCategorias.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/clases/ListaCategorias.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestor/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestor/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestor/includes/aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/includes/aside.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestor/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/includes/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +47,7 @@
       <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ez2Save\gestor\clases" />
       <recent name="C:\xampp\htdocs\ez2Save\gestor" />
       <recent name="C:\xampp\htdocs\ez2Save\gestor\img" />
     </key>
@@ -94,7 +95,7 @@
       <workItem from="1621673036148" duration="1312000" />
       <workItem from="1621764286312" duration="10996000" />
       <workItem from="1621782807768" duration="15790000" />
-      <workItem from="1621841020432" duration="7852000" />
+      <workItem from="1621841020432" duration="11296000" />
     </task>
     <servers />
   </component>

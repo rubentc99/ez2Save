@@ -3,10 +3,9 @@
 class ListaCategorias
 {
     private $lista; //array donde se almacenará la consulta sql
-    private $precioTotal;
     private $tabla; //variable para almacenar el nombre de la tabla "categorias"
     private $tablasub;  //variable para almacenar el nombre de la tabla "subcategorias"
-
+    private $tabladinero;
 
 
     /**
@@ -17,38 +16,18 @@ class ListaCategorias
     public function __construct()
     {
         $this->lista = array();
-        $precioTotal ="";
-        $this->precioTotal = $precioTotal;
         $this->tabla = "categorias";
         $this->tablasub = "subcategorias";
+        $this->tabladinero = "dinero";
     }
-
-    /**
-     * @return string
-     */
-    public function getPrecioTotal()
-    {
-        return $this->precioTotal;
-    }
-
-    /**
-     * @param string $precioTotal
-     */
-    public function setPrecioTotal($precioTotal)
-    {
-        $this->precioTotal = $precioTotal;
-    }
-
-
-
 
     public function obtenerElementos() { //al tener un valor = cadena vacía, si a esta funcion no le mando parámetro también va a funcionar
-        //si sqlBusca está vacío, la query no se va a ver alterada, y si tiene algo me va a buscar respecto a ese algo
+        $dinero=0;
         $sql = "SELECT * FROM ".$this->tabla;
         $conexion = new Bd();
         $res = $conexion->consulta($sql);
         while (list($id, $nombre, $precio) = mysqli_fetch_array($res)) {
-            $this->precioTotal -= $precio;
+            $dinero -= $precio;
             //el mysqli lo que hace es coge el array entre parentesis de formato sql y lo devuelve de forma que php pueda trabajar con el
             $fila = new Categoria($id, $nombre, $precio);
             array_push($this->lista, $fila); //cada vez que este while actue, inserta las variables en la lista
@@ -59,6 +38,7 @@ class ListaCategorias
                 array_push($this->lista, $fila); //cada vez que este while actue, inserta las variables en la lista
             }
         }
+        return $dinero;
     }
 
     /***

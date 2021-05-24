@@ -1,17 +1,24 @@
 <?php
     require_once "clases/Bd.php";
     require_once "clases/ListaCategorias.php";
+    require_once "clases/Dinero.php";
     require_once "clases/Categoria.php";
     require_once "clases/SubCategoria.php";
     require_once "includes/protect.php";
 
+
     $lista = new ListaCategorias();
-    if(isset($_GET['buscar']) && !empty($_GET['buscar'])){
-        $lista->obtenerElementos();
-    }else{
-        $lista->obtenerElementos();
-    }
+    $objDinero = new Dinero();
+
+    $objDinero->obtenerPorId(1);
+    $ingresos = $objDinero->getDinero();
+
+    //en la variable gastos almacenaré el sumatorio de los gastos de la categoría
+    $gastos = $lista->obtenerElementos();
+
+    $dinero = $ingresos + $gastos;
     //var_dump($lista);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +36,7 @@
             <div class="money_asigned">
                 <div class="img_money_asigned">
                     <img src="img/dialogo_largo_azul_relleno.png">
-                    <p><?php echo $lista->getPrecioTotal().'€'?></p>
+                    <p><?php echo $dinero.'€'?></p>
                     <p id="to_be_asigned">Por ser asignados</p>
                 </div>
         </div>

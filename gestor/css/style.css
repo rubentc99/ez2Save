@@ -290,6 +290,9 @@ body{ /*color de fondo*/
     justify-content: flex-start;
     align-items: center;
 }
+.lat_box a{
+    text-decoration: none;
+}
 .lat_box img{ /*imagen situada al lado del texto*/
     margin-left: 20px;
     width: 15%;
@@ -299,6 +302,7 @@ body{ /*color de fondo*/
     margin-left: 10px;
     color: #FFFFFF
 }
+
 /*///// SECTION HOME //////*/
 .new_category_button_div{ /*div del boton de nueva categoria*/
     width: 100%;
