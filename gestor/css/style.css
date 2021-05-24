@@ -237,23 +237,31 @@ body{ /*color de fondo*/
 .img_box_home img{ /*imagen del logo*/
      width: 100%;
 }
-.money_asigned{
+.money_asigned{ /*caja general donde se encuentra el bocadillo y demás*/
     width: 180px;
     height: 110px;
-    margin-left: 1000px;
+    margin-left: 820px;
 }
 .img_money_asigned { /*div de la imagen del bocadillo*/
     width: 170px;
     margin-top: -5px;
 }
-.img_money_asigned img{ /*imagen del bocadillo*/
-     width: 100%;
- }
 .img_money_asigned p{ /*texto del dinero*/
     margin-top: -100px;
-    margin-left: 55px;
+    margin-left: 40px;
     font-size: 32px;
     color: #FFFFFF;
+}
+.img_money_asigned img{ /*imagen del bocadillo*/
+    width: 100%;
+ }
+.img_pencil{
+    width: 20px;
+    margin-top: -50px;
+    margin-left: 115px;
+}
+.img_pencil img{
+    width: 100%;
 }
 #to_be_asigned{ /*texto "Por ser asignados"*/
     width: 200px;
@@ -289,9 +297,13 @@ body{ /*color de fondo*/
     text-decoration: none;
     justify-content: flex-start;
     align-items: center;
+    border-bottom: 1px solid #0077B6;
 }
 .lat_box a{
     text-decoration: none;
+}
+.lat_box:hover{
+    background-color: #0077B6;
 }
 .lat_box img{ /*imagen situada al lado del texto*/
     margin-left: 20px;

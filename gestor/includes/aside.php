@@ -9,6 +9,7 @@
                 <a href="./home.php"><p>Mi presupuesto</p></a>
         </div>
         <div class="lat_box">
+            <img src="img/money.png">
             <a href="./add_money.php"><p>Agregar dinero</p></a>
         </div>
     </div>

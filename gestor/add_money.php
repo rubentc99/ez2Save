@@ -13,13 +13,14 @@
     }
 
     if(isset($_POST) && !empty($_POST)){
-        if(!empty($_POST['id'])){ //si viene un idCategoria por post, es porque hemos clickado en editar y queremos hacer una actualizacion
+        if(!empty($_POST['id'])){ //si viene un id por post, es porque hemos clickado en editar y queremos hacer una actualizacion
             //actualizo
             $id = intval($_POST['id']);
             $dinero->actualizar($id, $_POST);
+            echo "actualiza";
         }
         $dinero->insertar($_POST, "dinero"); //inserto los datos del post
-        header('location:home.php');
+        //header('location:home.php');
     }
 
 ?>
@@ -36,9 +37,9 @@
     <section>
         <div class="category_creation_div">
             <form id="form_category" name="category" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-                <input type="hidden" name="id">
+                <input type="hidden" name="id" value="<?php echo $dinero->getId()?>">
                 <div class="form_category_money">
-                    <label>Dinero a asignar: </label><input type="text" name="dinero"">
+                    <label>Dinero a asignar: </label><input type="text" name="dinero"value="<?php echo $dinero->getDinero()?>">
                 </div>
                 <div class="btn_insert_category"><input id="insert_category_button" type="submit" value="Aceptar"></div>
             </form>
