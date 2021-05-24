@@ -222,21 +222,47 @@ body{ /*color de fondo*/
     text-decoration: underline;
     cursor: pointer;
 }
-/*///////////////////// HOME ///////////////////////////*/
+/*///////////////////// HOME HEADER ///////////////////////////*/
 .dark_header{ /*header azul oscuro parte superior*/
-    height: 80px;
+    height: 110px;
     width: 100%;
     background-color: #03045E;
-}
-.img_box_home img{ /*imagen del logo*/
-    width: 100%;
 }
 .img_box_home{ /*caja donde está metido el logo*/
     height: 60px;
     width: 160px;
     margin-left: 260px;
-    padding-top: 20px;
+    padding-top: 35px;
 }
+.img_box_home img{ /*imagen del logo*/
+     width: 100%;
+}
+.money_asigned{
+    width: 180px;
+    height: 110px;
+    margin-left: 1000px;
+}
+.img_money_asigned { /*div de la imagen del bocadillo*/
+    width: 170px;
+    margin-top: -5px;
+}
+.img_money_asigned img{ /*imagen del bocadillo*/
+     width: 100%;
+ }
+.img_money_asigned p{ /*texto del dinero*/
+    margin-top: -100px;
+    margin-left: 55px;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+#to_be_asigned{ /*texto "Por ser asignados"*/
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 25px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
 /*/// ASIDE ///*/
 .lat_menu{ /*menú lateral color azul*/
     top: 0;
@@ -258,7 +284,6 @@ body{ /*color de fondo*/
 }
 .lat_box{ /*cajas situadas en el menú de la izquierda que hacen referencia a "Mi prespuesto", "Gráficos" y "Mis cuentas"*/
     width: 240px;
-    background-color: #0077B6;
     height: 50px;
     display: flex;
     text-decoration: none;
@@ -279,6 +304,7 @@ body{ /*color de fondo*/
     width: 100%;
     height: 40px;
     border-bottom: 2px solid #CACACA;
+    overflow: auto; /*elimina el float left del header*/
 }
 .new_category_button_div p{ /*texto del div del boton de nueva categoria*/
     font-size: 24px;
@@ -295,6 +321,7 @@ body{ /*color de fondo*/
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
+
 }
 .plus_img_div{ /*div del boton del logo de añadir*/
     width: 60px;

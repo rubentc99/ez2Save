@@ -3,8 +3,11 @@
 class ListaCategorias
 {
     private $lista; //array donde se almacenará la consulta sql
+    private $precioTotal;
     private $tabla; //variable para almacenar el nombre de la tabla "categorias"
     private $tablasub;  //variable para almacenar el nombre de la tabla "subcategorias"
+
+
 
     /**
      * ListaCategorias constructor.
@@ -14,9 +17,29 @@ class ListaCategorias
     public function __construct()
     {
         $this->lista = array();
+        $precioTotal ="";
+        $this->precioTotal = $precioTotal;
         $this->tabla = "categorias";
         $this->tablasub = "subcategorias";
     }
+
+    /**
+     * @return string
+     */
+    public function getPrecioTotal()
+    {
+        return $this->precioTotal;
+    }
+
+    /**
+     * @param string $precioTotal
+     */
+    public function setPrecioTotal($precioTotal)
+    {
+        $this->precioTotal = $precioTotal;
+    }
+
+
 
 
     public function obtenerElementos() { //al tener un valor = cadena vacía, si a esta funcion no le mando parámetro también va a funcionar
@@ -25,6 +48,7 @@ class ListaCategorias
         $conexion = new Bd();
         $res = $conexion->consulta($sql);
         while (list($id, $nombre, $precio) = mysqli_fetch_array($res)) {
+            $this->precioTotal -= $precio;
             //el mysqli lo que hace es coge el array entre parentesis de formato sql y lo devuelve de forma que php pueda trabajar con el
             $fila = new Categoria($id, $nombre, $precio);
             array_push($this->lista, $fila); //cada vez que este while actue, inserta las variables en la lista

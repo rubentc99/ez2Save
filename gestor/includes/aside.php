@@ -8,9 +8,8 @@
             <img src="img/save-money.png">
             <p>Mi presupuesto</p>
         </div>
-        <!--
         <div class="lat_box">
-            <p>Gráficos</p>
-        </div>-->
+            <a href="./add_money.php"><p>Agregar dinero</p></a>
+        </div>
     </div>
 </aside>
