@@ -4,9 +4,15 @@
     <list default="true" id="58902428-f61c-4150-a5be-1f07df2e9d45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestor/add_money.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/add_money.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestor/clases/Categoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/clases/Categoria.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestor/clases/SubCategoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/clases/SubCategoria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestor/clases/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/clases/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestor/create_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/create_category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestor/create_subcategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/create_subcategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestor/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestor/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestor/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestor/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestor/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/gestor/register.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +40,7 @@
   <component name="ProjectId" id="1rAsY3XSjySsxCxFsZ9kp4WuBng" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gestor/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GXZONEconEdicionDeUsuariosRegistroFuncional" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -92,7 +98,12 @@
       <workItem from="1621673036148" duration="1312000" />
       <workItem from="1621764286312" duration="10996000" />
       <workItem from="1621782807768" duration="15790000" />
-      <workItem from="1621841020432" duration="23498000" />
+      <workItem from="1621841020432" duration="24187000" />
+      <workItem from="1621929815818" duration="3098000" />
+      <workItem from="1622102524160" duration="9507000" />
+      <workItem from="1622201910559" duration="315000" />
+      <workItem from="1622214575701" duration="1808000" />
+      <workItem from="1622279339252" duration="11975000" />
     </task>
     <servers />
   </component>

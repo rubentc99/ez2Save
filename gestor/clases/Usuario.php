@@ -171,7 +171,7 @@ class Usuario
     public function registro($id, $nombre, $apellidos, $email, $pass){
         $conexion = new Bd();
         $permiso = 0;
-        $pass=md5($pass); //añado el cifrado md5 a la contraseña
+        $pass = md5($pass); //añado el cifrado md5 a la contraseña
         $sql = "INSERT INTO ".$this->tabla." (id,permiso,nombre,apellidos,email,pass) VALUES ('$id','$permiso','$nombre','$apellidos','$email','$pass');";
         //echo $sql;
         $res = $conexion->consulta($sql);

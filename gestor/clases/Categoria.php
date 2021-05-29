@@ -102,7 +102,7 @@ class Categoria
             <div class='category_name' style='width:300px; margin-left: 15px'><p>$this->nombre</p></div>
             <div class='category_price' style='width: 100px; margin-left: 290px'><p>$this->precio €</p></div>
             <!--en el botón de añadir subcategoría, ncesito mandar el id de la categoría para asociarlo al objeto subcategoria-->
-            <div class='add_subcategory_icon' style='margin-left: 445px'><a href='./create_subcategory.php?idCategoria=".$this->idCategoria."'><img src='./img/plus_black.png'></a></div>
+            <div class='add_subcategory_icon' style='margin-left: 435px'><a href='./create_subcategory.php?idCategoria=".$this->idCategoria."'><img src='./img/plus_black.png'></a></div>
             <div class='list_category_edit_icon' style='margin-left: 10px'><a href='./create_category.php?id=".$this->idCategoria."'><img src='./img/editar.png'></a></div>
             <div class='list_category_delete_icon' style='margin-left: 10px'><a href='javascript:borrarCategoria(".$this->idCategoria.")'><img src='./img/delete.png'></a></div>
         </div>";

@@ -37,12 +37,12 @@
         <form id="form_category" name="category" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
             <input type="hidden" name="id" value="<?php echo $categoria->getId()?>">
             <div class="form_category_name">
-                <label>Nombre de la categoría: </label><input type="text" name="nombre" value="<?php echo $categoria->getNombre()?>">
+                <label>Nombre de la categoría: </label><input type="text" id="nombre" name="nombre" value="<?php echo $categoria->getNombre()?>">
             </div>
             <div class="form_category_money">
-                <label>Valor a asignar: </label><input type="text" name="precio" value="<?php echo $categoria->getPrecio()?>">
+                <label>Valor a asignar: </label><input type="text" id="dinero" name="precio" value="<?php echo $categoria->getPrecio()?>">
             </div>
-            <div class="btn_insert_category"><input id="insert_category_button" type="submit" value="Aceptar"></div>
+            <div class="btn_insert_category"><input type="button" id="insert_category_button" onclick="validarCategoria()" value="Aceptar"></div>
         </form>
     </div>
 </section>

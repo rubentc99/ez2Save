@@ -45,7 +45,6 @@
                         <a href="add_money.php?id=1"><img src="img/pencil.png"></a>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>

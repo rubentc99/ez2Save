@@ -119,7 +119,7 @@ class SubCategoria
         $html = "<div class='subcategory_content'>
             <a href='./view_subcategory.php?id=".$this->id."'><div class='subcategory_name' style='width: 150px; margin-left: 55px'><p>$this->nombre</p></a></div>
             <div class='precios' style='width: 60px;margin-left: 436px'><p>$this->precio €</p></div>
-            <div class='view_subcategory_edit_icon' style='width: 25px;margin-left: 520px'><a href='./create_subcategory.php?idSubcategoria=".$this->id."&idCategoria=".$this->idCategoria."'><img src='./img/editar.png'></a></div>
+            <div class='view_subcategory_edit_icon' style='width: 25px;margin-left: 510px'><a href='./create_subcategory.php?idSubcategoria=".$this->id."&idCategoria=".$this->idCategoria."'><img src='./img/editar.png'></a></div>
             <div class='view_subcategory_delete_icon' style='margin-left: 10px'><a href='javascript:borrarSubcategoria(".$this->id.")'><img src='./img/delete.png'></a></div>
         </div>";
         return $html;
