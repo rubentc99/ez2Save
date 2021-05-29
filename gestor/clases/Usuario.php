@@ -39,105 +39,37 @@ class Usuario
         $this->pass = $pass;
     }
 
-
-    /**
-     * @return mixed
-     */
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPermiso()
-    {
-        return $this->permiso;
-    }
-
-    /**
-     * @param mixed $permiso
-     */
-    public function setPermiso($permiso)
-    {
-        $this->permiso = $permiso;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getNombre()
     {
         return $this->nombre;
     }
 
-    /**
-     * @param mixed $nombre
-     */
     public function setNombre($nombre)
     {
         $this->nombre = $nombre;
     }
 
-    /**
-     * @return mixed
-     */
     public function getApellidos()
     {
         return $this->apellidos;
     }
 
-    /**
-     * @param mixed $apellidos
-     */
-    public function setApellidos($apellidos)
-    {
-        $this->apellidos = $apellidos;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getemail()
+    public function getEmail()
     {
         return $this->email;
     }
 
-    /**
-     * @param mixed $email
-     */
-    public function setemail($email)
-    {
-        $this->email = $email;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getPass()
     {
         return $this->pass;
     }
 
-    /**
-     * @param mixed $pass
-     */
-    public function setPass($pass)
-    {
-        $this->pass = $pass;
-    }
-
     public function obtenerPorId($id){
-
         $sql = "SELECT * FROM ".$this->tabla." WHERE id=".$id;
 
         $conexion= new Bd();

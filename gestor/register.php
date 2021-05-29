@@ -59,7 +59,7 @@
                 <div class="register_form_box_3">
                     <div class="register_email_box">
                         <label id="register_email_label">Email:</label>
-                        <input id="register_email_input" type="email" name="email" value="<?php echo $usuario->getemail()?>">
+                        <input id="register_email_input" type="email" name="email" value="<?php echo $usuario->getEmail()?>">
                     </div>
                 </div>
                 <div class="register_form_box_4">

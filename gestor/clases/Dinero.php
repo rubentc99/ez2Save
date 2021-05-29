@@ -17,36 +17,14 @@ class Dinero
         $this->dinero = $dinero;
     }
 
-    /**
-     * @return string
-     */
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * @param string $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return string
-     */
     public function getDinero()
     {
         return $this->dinero;
-    }
-
-    /**
-     * @param string $dinero
-     */
-    public function setDinero($dinero)
-    {
-        $this->dinero = $dinero;
     }
 
     public function insertar($datos, $tabla){
@@ -58,13 +36,6 @@ class Dinero
     public function actualizar($id, $datos){
         $conexion = new Bd();
         $conexion->uppdateBD($id, "dinero", $datos);
-    }
-
-    public function borrar($id){
-        $conexion = new Bd();
-        $sql = "DELETE FROM dinero WHERE id =".$id;
-        //echo $sql;
-        $conexion->consulta($sql);
     }
 
     public function obtenerPorId($id){

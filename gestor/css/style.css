@@ -6,9 +6,6 @@
 html, body{
     height: 100%;
 }
-aside{
-    overflow: hidden;
-}
 /*///////////////////// INDEX ///////////////////////////*/
 .dark_header_index{ /*header azul oscuro parte superior*/
     height: 80px;
@@ -278,9 +275,10 @@ body{ /*color de fondo*/
 
 /*/// ASIDE ///*/
 .lat_menu{ /*menú lateral color azul*/
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    position: absolute;
     height: 100%;
     width: 240px;
     background-color: #00B4D8;

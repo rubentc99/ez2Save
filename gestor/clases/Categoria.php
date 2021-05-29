@@ -18,53 +18,19 @@ class Categoria
         $this->precio = $precio;
     }
 
-
-    /**
-     * @return mixed
-     */
     public function getId()
     {
         return $this->idCategoria;
     }
 
-    /**
-     * @param mixed $idCategoria
-     */
-    public function setId($idCategoria)
-    {
-        $this->idCategoria = $idCategoria;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getNombre()
     {
         return $this->nombre;
     }
 
-    /**
-     * @param mixed $nombre
-     */
-    public function setNombre($nombre)
-    {
-        $this->nombre = $nombre;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getPrecio()
     {
         return $this->precio;
-    }
-
-    /**
-     * @param mixed $precio
-     */
-    public function setPrecio($precio)
-    {
-        $this->precio = $precio;
     }
 
     public function insertar($datos, $tabla){
