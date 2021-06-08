@@ -91,8 +91,8 @@ class SubCategoria
             1. Recoger los datos del objeto subcategoria ya creado y mostrarlos en los inputs 
             2. Necesito el id de la categoría a la que pertence para realizar el update (aunque al recoger los datos del objeto también recojo el idCategoria,
             para otros casos como la creación de categoría necesito una variable que sirva para cualquier situación, y esa variable es idGET)-->
-            <div class='view_subcategory_edit_icon' style='margin-left: 11%'><a href='./create_subcategory.php?idSubcategoria=".$this->id."&idCategoria=".$this->idCategoria."'><img src='./img/editar.png'></a></div>
-            <div class='view_subcategory_delete_icon' style='margin-left: 2%'><a href='javascript:borrarSubcategoria(".$this->id.")'><img src='./img/delete.png'></a></div>";
+            <div class='view_subcategory_edit_icon' style='margin-left: 10%'><a href='./create_subcategory.php?idSubcategoria=".$this->id."&idCategoria=".$this->idCategoria."'><img src='./img/editar.png'></a></div>
+            <div class='view_subcategory_delete_icon' style='margin-left: 1%'><a href='javascript:borrarSubcategoria(".$this->id.")'><img src='./img/delete.png'></a></div>";
         return $html;
     }
 }
